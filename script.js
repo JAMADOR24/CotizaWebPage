@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
-    const API_URL = 'https://cotiza-back.onrender.com/api'; // Reemplazar con tu URL de Render
+    const API_URL = 'https://cotizaweb.onrender.com/api'; // Reemplazar con tu URL de Render
     let clientes = [];
     let items = [];
     let cotizaciones = [];
@@ -494,4 +494,5 @@ document.addEventListener('DOMContentLoaded', function() {
         // Implementar notificación de éxito
         alert(`Éxito: ${message}`);
     }
+
 });
