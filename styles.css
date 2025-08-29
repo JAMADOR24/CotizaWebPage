@@ -376,6 +376,38 @@ select:focus, input:focus {
     color: #6c757d;
 }
 
+/* Estilos para el modal de items */
+#item-modal .modal-content {
+    max-width: 500px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.form-actions button {
+    min-width: 120px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 80px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .item-row {
