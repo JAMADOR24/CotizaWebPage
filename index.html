@@ -130,6 +130,41 @@
                     <button type="submit" class="btn-primary">
                         <i class="fas fa-save"></i> Guardar Item
                     </button>
+
+             <!-- Modal para crear/editar clientes -->
+                <div class="modal" id="cliente-modal">
+                    <div class="modal-content">
+                        <span class="close-modal" data-modal="cliente-modal">&times;</span>
+                        <h2 id="cliente-modal-title">Crear Nuevo Cliente</h2>
+                        
+                        <form id="cliente-form">
+                            <input type="hidden" id="cliente-id">
+                            
+                            <div class="form-group">
+                                <label for="cliente-nombre"><i class="fas fa-user"></i> Nombre del Cliente</label>
+                                <input type="text" id="cliente-nombre" required placeholder="Ej: Juan Pérez">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="cliente-email"><i class="fas fa-envelope"></i> Correo (Opcional)</label>
+                                <input type="email" id="cliente-email" placeholder="ejemplo@correo.com">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="cliente-telefono"><i class="fas fa-phone"></i> Teléfono (Opcional)</label>
+                                <input type="text" id="cliente-telefono" placeholder="Ej: +57 300 123 4567">
+                            </div>
+                
+                            <div class="form-group">
+                                <label for="cliente-direccion"><i class="fas fa-map-marker-alt"></i> Dirección (Opcional)</label>
+                                <input type="text" id="cliente-direccion" placeholder="Ej: Calle 123 #45-67">
+                            </div>
+                
+                            <div class="form-actions">
+                                <button type="button" class="btn-secondary" data-modal="cliente-modal">Cancelar</button>
+                                <button type="submit" class="btn-primary">
+                     <i class="fas fa-save"></i> Guardar Cliente
+                    </button>
                 </div>
             </form>
         </div>
@@ -139,5 +174,6 @@
 </body>
 
 </html>
+
 
 
