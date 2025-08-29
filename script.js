@@ -103,39 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
             cerrarModal('item-modal');
         });
     }
-
-    // Abrir modal de cliente
-document.getElementById("btn-add-cliente").addEventListener("click", function() {
-    document.getElementById("cliente-modal").style.display = "block";
-});
-
-// Cerrar modal cuando se hace clic en la X o en Cancelar
-document.querySelectorAll('[data-modal="cliente-modal"]').forEach(btn => {
-    btn.addEventListener("click", function() {
-        document.getElementById("cliente-modal").style.display = "none";
-    });
-});
-
-// Guardar cliente (ejemplo básico)
-document.getElementById("cliente-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    const nombre = document.getElementById("cliente-nombre").value;
-    
-    if (nombre) {
-        // Agregar al select de clientes
-        const option = document.createElement("option");
-        option.value = nombre;
-        option.textContent = nombre;
-        document.getElementById("cliente").appendChild(option);
-
-        // Seleccionarlo automáticamente
-        document.getElementById("cliente").value = nombre;
-
-        // Cerrar modal
-        document.getElementById("cliente-modal").style.display = "none";
-        this.reset();
-    }
-});
     
     function switchTab(tabId) {
         // Actualizar botones de tab
@@ -723,4 +690,5 @@ document.getElementById("cliente-form").addEventListener("submit", function(e) {
     }
 
 });
+
 
